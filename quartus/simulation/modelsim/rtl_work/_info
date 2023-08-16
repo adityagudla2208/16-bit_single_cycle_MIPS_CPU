@@ -1,0 +1,276 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/simulation/modelsim
+valu
+Z1 !s110 1648737389
+!i10b 1
+!s100 al;C_;f`XH:ABlPmh3>mQ2
+I>hng7[flcm7VO[7mAiABV3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1648734283
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1648737389.000000
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus}
+Z7 tCvgOpt 0
+vALUControl
+R1
+!i10b 1
+!s100 bdJKEna;D0DRB>AX3K74I0
+I4H<cNCED25gd[bAgRlEoL1
+R2
+R0
+w1648734564
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v|
+!i113 1
+R5
+R6
+R7
+n@a@l@u@control
+vcontrol
+R1
+!i10b 1
+!s100 LK4[3Ol>J@6=^9U<knZN;1
+Ieh13zK6<bfz_5ZK3DKoLd2
+R2
+R0
+w1648651802
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v|
+!i113 1
+R5
+R6
+R7
+vdata_memory
+R1
+!i10b 1
+!s100 [d_?B:6E:]Ue]MbR7T<]D0
+IDHe^n`^n1XBajdll`zJ]h3
+R2
+R0
+w1648650506
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v|
+!i113 1
+R5
+R6
+R7
+vinstr_mem
+Z8 !s110 1648737390
+!i10b 1
+!s100 ]l0=gK5bPkP]9I0DSI5YT1
+I^b3c1ka@mY1g=<HPKI<_j2
+R2
+R0
+w1648736495
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1648737390.000000
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v|
+!i113 1
+R5
+R6
+R7
+vJR_Control
+R1
+!i10b 1
+!s100 ESJ1oPB0aiPjhbG`K:49F0
+Ie1@RzQf<lHPl<Xb9UR6>B0
+R2
+R0
+w1648650972
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v|
+!i113 1
+R5
+R6
+R7
+n@j@r_@control
+vmips
+R1
+!i10b 1
+!s100 hmMUDX]YXX7mTRVMCiDo@3
+Ifcja:2F>g@1<<2Tc8SoUV2
+R2
+R0
+w1648713763
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v|
+!i113 1
+R5
+R6
+R7
+vmux
+R1
+!i10b 1
+!s100 ;nT?8DBD`eHG^=UNYzWF90
+ICN<Yg^gG9_j<QcacbOzOz1
+R2
+R0
+Z10 w1648727196
+Z11 8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+Z12 FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+L0 18
+R3
+r1
+!s85 0
+31
+R4
+Z13 !s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v|
+Z14 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v|
+!i113 1
+R5
+R6
+R7
+vregister_file
+R8
+!i10b 1
+!s100 W`VP2JQXDHe[_:T[GI^Q83
+I6@TZ^JJhZN3F^Baz8ike52
+R2
+R0
+w1648736479
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v|
+!i113 1
+R5
+R6
+R7
+vsll
+R8
+!i10b 1
+!s100 F0MfJ3@LKd88Jl;PLzoJF3
+Ie2N9lbJF`77MKBBDFR2ii1
+R2
+R0
+w1648727745
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v|
+!i113 1
+R5
+R6
+R7
+vsrl
+R1
+!i10b 1
+!s100 ::Uh_LzYgA5JBcD1Gd[7B0
+IjA^8N9>N>YZ1JfH]?;<jj1
+R2
+R0
+R10
+R11
+R12
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R13
+R14
+!i113 1
+R5
+R6
+R7
+vtb_mips16
+R8
+!i10b 1
+!s100 2KlXA_HE2M3`6=QO;QAZO3
+IR>3M]Kmzlk[]oaQ380Hf61
+R2
+R0
+w1648714319
+8F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/tb_mips16.v
+FF:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/tb_mips16.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/tb_mips16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus|F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/tb_mips16.v|
+!i113 1
+R5
+R6
+R7

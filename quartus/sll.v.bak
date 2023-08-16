@@ -1,0 +1,14 @@
+module sll(
+
+	input [15:0] a,
+	input [3:0] b,
+	output reg [15:0] out
+
+);
+
+
+
+
+
+
+endmodule

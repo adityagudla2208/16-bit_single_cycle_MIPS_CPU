@@ -1,0 +1,209 @@
+# Reading F:/intelFPGA_lite/19.1/modelsim_ase/tcl/vsim/pref.tcl
+# do mips_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying F:/intelFPGA_lite/19.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v 
+# -- Compiling module srl
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	srl
+# End time: 20:06:29 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v 
+# -- Compiling module data_memory
+# 
+# Top level modules:
+# 	data_memory
+# End time: 20:06:29 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v 
+# -- Compiling module ALUControl
+# 
+# Top level modules:
+# 	ALUControl
+# End time: 20:06:29 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v 
+# -- Compiling module JR_Control
+# 
+# Top level modules:
+# 	JR_Control
+# End time: 20:06:29 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 20:06:29 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v 
+# -- Compiling module mips
+# 
+# Top level modules:
+# 	mips
+# End time: 20:06:29 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:06:29 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:29 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v 
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# End time: 20:06:30 on Mar 31,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:30 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v 
+# -- Compiling module instr_mem
+# 
+# Top level modules:
+# 	instr_mem
+# End time: 20:06:30 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:30 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v 
+# -- Compiling module sll
+# 
+# Top level modules:
+# 	sll
+# End time: 20:06:30 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+F:/Desktop/Academics/Sem_2/EE\ 705\ VLSI\ Desing\ Lab/Unit-23\ MIP\ cpu\ related\ \ (\ contact\ TA\ \ Harsh\ Paryani\ )-20220330/quartus {F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/tb_mips16.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:30 on Mar 31,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus" F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/tb_mips16.v 
+# -- Compiling module tb_mips16
+# 
+# Top level modules:
+# 	tb_mips16
+# End time: 20:06:30 on Mar 31,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_mips16
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_mips16 
+# Start time: 20:06:30 on Mar 31,2022
+# Loading work.tb_mips16
+# Loading work.mips
+# Loading work.instr_mem
+# Loading work.control
+# Loading work.register_file
+# Loading work.JR_Control
+# Loading work.ALUControl
+# Loading work.alu
+# Loading work.sll
+# Loading work.mux
+# Loading work.srl
+# Loading work.data_memory
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_14 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_13 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_12 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_11 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_10 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_9 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(14): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_3_8 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_2_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_2_14 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_2_13 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(15): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_2_12 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_1_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(16): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_1_14 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/sll_uut/m_0_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_14 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_13 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_12 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_11 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_10 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_9 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(9): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_3_8 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(10): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_2_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(10): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_2_14 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(10): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_2_13 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(10): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_2_12 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(11): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_1_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(11): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_1_14 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# ** Warning: (vsim-3015) F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(12): [PCDPC] - Port size (1) does not match connection size (32) for port 'i1'. The port definition is at: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mips16/uut/alu_unit/srl_uut/m_0_15 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ns
+# End time: 20:10:17 on Mar 31,2022, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 30

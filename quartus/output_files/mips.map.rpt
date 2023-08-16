@@ -1,0 +1,954 @@
+Analysis & Synthesis report for mips
+Thu Mar 31 19:10:28 2022
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_0_15"
+ 12. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_1_14"
+ 13. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_1_15"
+ 14. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_12"
+ 15. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_13"
+ 16. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_14"
+ 17. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_15"
+ 18. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_8"
+ 19. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_9"
+ 20. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_10"
+ 21. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_11"
+ 22. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_12"
+ 23. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_13"
+ 24. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_14"
+ 25. Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_15"
+ 26. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_0_15"
+ 27. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_1_14"
+ 28. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_1_15"
+ 29. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_12"
+ 30. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_13"
+ 31. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_14"
+ 32. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_15"
+ 33. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_8"
+ 34. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_9"
+ 35. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_10"
+ 36. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_11"
+ 37. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_12"
+ 38. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_13"
+ 39. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_14"
+ 40. Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_15"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Mar 31 19:10:28 2022       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                      ; mips                                        ;
+; Top-level Entity Name              ; mips                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 20                                          ;
+;     Total combinational functions  ; 20                                          ;
+;     Dedicated logic registers      ; 15                                          ;
+; Total registers                    ; 15                                          ;
+; Total pins                         ; 34                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; mips               ; mips               ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                              ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; srl.v                            ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v           ;         ;
+; data_memory.v                    ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v   ;         ;
+; ALUControl.v                     ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v    ;         ;
+; JR_Control.v                     ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v    ;         ;
+; control.v                        ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v       ;         ;
+; mips.v                           ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v          ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v           ;         ;
+; register_file.v                  ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v ;         ;
+; instr_mem.v                      ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v     ;         ;
+; sll.v                            ; yes             ; User Verilog HDL File  ; F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v           ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 20        ;
+;                                             ;           ;
+; Total combinational functions               ; 20        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 4         ;
+;     -- 3 input functions                    ; 1         ;
+;     -- <=2 input functions                  ; 15        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 6         ;
+;     -- arithmetic mode                      ; 14        ;
+;                                             ;           ;
+; Total registers                             ; 15        ;
+;     -- Dedicated logic registers            ; 15        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 34        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 15        ;
+; Total fan-out                               ; 144       ;
+; Average fan-out                             ; 1.40      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                          ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
+; |mips                            ; 20 (15)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |mips                             ; mips        ; work         ;
+;    |instr_mem:instrucion_memory| ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |mips|instr_mem:instrucion_memory ; instr_mem   ; work         ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++-----------------------------------------+---------------------------------------------+
+; Register name                           ; Reason for Removal                          ;
++-----------------------------------------+---------------------------------------------+
+; register_file:reg_file|reg_array[7][15] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][15] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][15] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][15] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][14] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][14] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][14] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][14] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][13] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][13] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][13] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][13] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][12] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][12] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][12] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][12] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][11] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][11] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][11] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][11] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][10] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][10] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][10] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][10] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][9]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][9]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][9]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][9]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][8]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][8]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][8]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][8]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][7]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][7]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][7]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][7]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][6]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][6]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][6]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][6]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][5]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][5]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][5]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][5]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][4]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][4]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][4]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][4]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][3]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][3]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][3]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][3]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][2]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][2]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][2]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][2]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][1]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][1]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][1]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][1]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[7][0]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[6][0]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[5][0]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[4][0]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][15] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][14] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][13] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][12] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][11] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][10] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][9]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][8]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][7]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][6]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][5]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][4]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][3]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][2]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][1]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[1][0]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[2][15] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][14] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][13] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][12] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][11] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][10] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][9]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][8]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][7]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][6]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][5]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][4]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][3]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][2]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][1]  ; Stuck at VCC due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[2][0]  ; Stuck at GND due to stuck port clock_enable ;
+; pc_current[0]                           ; Stuck at GND due to stuck port data_in      ;
+; register_file:reg_file|reg_array[0][15] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][14] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][13] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][12] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][11] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][10] ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][9]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][8]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][7]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][6]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][5]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][4]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][3]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][2]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][1]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[0][0]  ; Lost fanout                                 ;
+; register_file:reg_file|reg_array[3][15] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][14] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][13] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][12] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][11] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][10] ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][9]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][8]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][7]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][6]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][5]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][4]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][3]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][2]  ; Stuck at GND due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][1]  ; Stuck at VCC due to stuck port clock_enable ;
+; register_file:reg_file|reg_array[3][0]  ; Stuck at VCC due to stuck port clock_enable ;
+; Total Number of Removed Registers = 129 ;                                             ;
++-----------------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                 ;
++-----------------------------------------+--------------------------------+----------------------------------------------------------------------------------+
+; Register name                           ; Reason for Removal             ; Registers Removed due to This Register                                           ;
++-----------------------------------------+--------------------------------+----------------------------------------------------------------------------------+
+; register_file:reg_file|reg_array[2][12] ; Stuck at GND                   ; register_file:reg_file|reg_array[2][0], register_file:reg_file|reg_array[0][12], ;
+;                                         ; due to stuck port clock_enable ; register_file:reg_file|reg_array[0][0], register_file:reg_file|reg_array[3][0]   ;
+; register_file:reg_file|reg_array[1][15] ; Lost Fanouts                   ; register_file:reg_file|reg_array[0][15]                                          ;
+; register_file:reg_file|reg_array[1][13] ; Lost Fanouts                   ; register_file:reg_file|reg_array[0][14]                                          ;
+; register_file:reg_file|reg_array[1][12] ; Lost Fanouts                   ; register_file:reg_file|reg_array[0][13]                                          ;
+; register_file:reg_file|reg_array[2][15] ; Stuck at GND                   ; register_file:reg_file|reg_array[0][7]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][11] ; Stuck at GND                   ; register_file:reg_file|reg_array[0][11]                                          ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][10] ; Stuck at GND                   ; register_file:reg_file|reg_array[0][10]                                          ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][9]  ; Stuck at GND                   ; register_file:reg_file|reg_array[0][9]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][8]  ; Stuck at GND                   ; register_file:reg_file|reg_array[0][8]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][5]  ; Stuck at GND                   ; register_file:reg_file|reg_array[0][5]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][4]  ; Stuck at GND                   ; register_file:reg_file|reg_array[0][4]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][3]  ; Stuck at GND                   ; register_file:reg_file|reg_array[0][3]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][2]  ; Stuck at GND                   ; register_file:reg_file|reg_array[0][2]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
+; register_file:reg_file|reg_array[2][1]  ; Stuck at VCC                   ; register_file:reg_file|reg_array[0][1]                                           ;
+;                                         ; due to stuck port clock_enable ;                                                                                  ;
++-----------------------------------------+--------------------------------+----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 15    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 15    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_0_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_1_14"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_1_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_12"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_13"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_14"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_2_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_8"                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_9"                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_10"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_11"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_12"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_13"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_14"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|srl:srl_uut|mux:m_3_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_0_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_1_14"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_1_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_12"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_13"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_14"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_2_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_8"                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_9"                                                                                                                                                 ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_10"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_11"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_12"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_13"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_14"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_unit|sll:sll_uut|mux:m_3_15"                                                                                                                                                ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; i1     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; i1[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 34                          ;
+; cycloneiii_ff         ; 15                          ;
+;     CLR               ; 15                          ;
+; cycloneiii_lcell_comb ; 21                          ;
+;     arith             ; 14                          ;
+;         2 data inputs ; 14                          ;
+;     normal            ; 7                           ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.40                        ;
+; Average LUT depth     ; 1.93                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Thu Mar 31 19:10:12 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (12090): Entity "mux" obtained from "srl.v" instead of from Quartus Prime megafunction library File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 18
+Info (12021): Found 2 design units, including 2 entities, in source file srl.v
+    Info (12023): Found entity 1: srl File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 1
+    Info (12023): Found entity 2: mux File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file data_memory.v
+    Info (12023): Found entity 1: data_memory File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.v
+    Info (12023): Found entity 1: ALUControl File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/ALUControl.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file jr_control.v
+    Info (12023): Found entity 1: JR_Control File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/JR_Control.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file control.v
+    Info (12023): Found entity 1: control File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/control.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mips.v
+    Info (12023): Found entity 1: mips File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register_file.v
+    Info (12023): Found entity 1: register_file File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/register_file.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file instr_mem.v
+    Info (12023): Found entity 1: instr_mem File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tb_mips16.v
+    Info (12023): Found entity 1: tb_mips16 File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/tb_mips16.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file sll.v
+    Info (12023): Found entity 1: sll File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_15" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_14" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_13" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_12" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_11" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_10" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_9" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_8" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_7" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_6" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_5" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_4" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_3" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_2" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_1" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(9): created implicit net for "y_3_0" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_15" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_14" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_13" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_12" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_11" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_10" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_9" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_8" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_7" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_6" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_5" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_4" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_3" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_2" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_1" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(10): created implicit net for "y_2_0" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_15" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_14" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_13" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_12" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_11" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_10" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_9" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_8" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_7" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_6" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_5" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_4" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_3" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_2" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_1" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at srl.v(11): created implicit net for "y_1_0" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/srl.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_15" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_14" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_13" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_12" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_11" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_10" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_9" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_8" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_7" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_6" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_5" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_4" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_3" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_2" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_1" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(14): created implicit net for "y_3_0" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_15" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_14" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_13" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_12" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_11" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_10" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_9" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_8" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_7" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_6" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_5" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_4" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_3" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_2" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_1" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(15): created implicit net for "y_2_0" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_15" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_14" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_13" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_12" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_11" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_10" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_9" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_8" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_7" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_6" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_5" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_4" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_3" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_2" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_1" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at sll.v(16): created implicit net for "y_1_0" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 16
+Info (12127): Elaborating entity "mips" for the top level hierarchy
+Info (12128): Elaborating entity "instr_mem" for hierarchy "instr_mem:instrucion_memory" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 46
+Warning (10030): Net "rom.data_a" at instr_mem.v(19) has no driver or initial value, using a default initial value '0' File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v Line: 19
+Warning (10030): Net "rom.waddr_a" at instr_mem.v(19) has no driver or initial value, using a default initial value '0' File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v Line: 19
+Warning (10030): Net "rom.we_a" at instr_mem.v(19) has no driver or initial value, using a default initial value '0' File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v Line: 19
+Info (12128): Elaborating entity "control" for hierarchy "control:control_unit" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 65
+Info (12128): Elaborating entity "register_file" for hierarchy "register_file:reg_file" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 85
+Info (12128): Elaborating entity "JR_Control" for hierarchy "JR_Control:JRControl_unit" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 99
+Info (12128): Elaborating entity "ALUControl" for hierarchy "ALUControl:ALU_Control_unit" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 106
+Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_unit" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 118
+Info (12128): Elaborating entity "sll" for hierarchy "alu:alu_unit|sll:sll_uut" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v Line: 31
+Info (12128): Elaborating entity "mux" for hierarchy "alu:alu_unit|sll:sll_uut|mux:m_3_15" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/sll.v Line: 14
+Info (12128): Elaborating entity "srl" for hierarchy "alu:alu_unit|srl:srl_uut" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/alu.v Line: 32
+Info (12128): Elaborating entity "data_memory" for hierarchy "data_memory:datamem" File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 153
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276004): RAM logic "instr_mem:instrucion_memory|rom" is uninferred due to inappropriate RAM size File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/instr_mem.v Line: 19
+    Info (276007): RAM logic "data_memory:datamem|ram" is uninferred due to asynchronous read logic File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/data_memory.v Line: 20
+Warning (12241): 30 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "pc_out[0]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 4
+    Warning (13410): Pin "alu_result[1]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[3]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[4]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[5]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[6]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[7]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[8]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[9]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[10]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[11]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[12]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[13]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[14]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+    Warning (13410): Pin "alu_result[15]" is stuck at GND File: F:/Desktop/Academics/Sem_2/EE 705 VLSI Desing Lab/Unit-23 MIP cpu related  ( contact TA  Harsh Paryani )-20220330/quartus/mips.v Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 96 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 54 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 20 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 118 warnings
+    Info: Peak virtual memory: 4743 megabytes
+    Info: Processing ended: Thu Mar 31 19:10:28 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:35
+
+
